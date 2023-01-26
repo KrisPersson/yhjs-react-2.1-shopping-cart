@@ -1,0 +1,23 @@
+
+.header__cart {
+    display: flex;
+    justify-content: space-between;
+    width: 4rem;
+    
+    height: 3rem;
+}
+
+.header__cart p {
+    color: rgb(238,105,150);
+}
+
+.products-in-cart {
+    color: #000 !important;
+    background-color: #fff;
+    height: 1.7rem;
+    width: 1.7rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

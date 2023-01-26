@@ -1,0 +1,13 @@
+
+header {
+    width: 100%;
+    max-width: 1400px;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    width: 3rem;
+    height: 4rem;
+}

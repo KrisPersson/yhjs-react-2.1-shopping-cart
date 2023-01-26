@@ -1,0 +1,51 @@
+
+.product {
+    width: 15rem;
+    height: 16rem;
+    background: #fff;
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding: 0.2rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.product h3 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    /* text-align: left; */
+}
+
+.product h4 {
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin: 0;
+    text-align: left;
+
+}
+
+.product p {
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin: 0 1rem;
+    line-height: 1rem;
+    text-align: left;
+
+}
+
+.product button {
+    background: rgb(56,173,171);
+    color: #fff;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 1rem;
+    white-space: nowrap;
+    max-width: 50%;;
+    /* align-self: center; */
+}
