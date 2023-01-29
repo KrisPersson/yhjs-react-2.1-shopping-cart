@@ -1,12 +1,12 @@
 import './Header.css'
 import Cart from '../Cart/Cart'
 
-function Header() {
+function Header({ setProductsInCart, productsInCart }) {
 
     return (
         <header>
             <img src='/sherlock.png' />
-            <Cart />
+            <Cart setProductsInCart={ setProductsInCart } productsInCart={ productsInCart } />
         </header>
     )
 }
