@@ -1,28 +1,17 @@
 import "./ViewCart.css"
 
-function ViewCart({ setProductsInCart, productsInCart }) {
-
-    function removeProductFromCart(event) {
-        const target = event.target.parentNode
-        console.log(target)
-
+function ViewCart({ removeProductFromCart, productsInCart }) {
+    if (productsInCart.length > 0) {
     }
-
-    
-    const liElements = productsInCart.map(item => <li><span>{ item }</span><a onClick={ (event) => removeProductFromCart(event) } href="#">-</a></li>)
+    const liElements = productsInCart.map((item, i) => <li key={ i }><span>{ item }</span><a onClick={ (event) => removeProductFromCart(event) } href="#">-</a></li>)
        
-
-    
-
-
     return(
-        <section class='cart-opened'>
+        <section className='cart-opened'>
             <h3>Products in cart</h3>
             <ul>
-                {liElements}
+                {productsInCart.length > 0 ? liElements : <h4>No products in cart</h4>}
             </ul>
         </section>
-        
     )
 }
 

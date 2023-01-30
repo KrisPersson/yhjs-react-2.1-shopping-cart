@@ -21,3 +21,18 @@
     justify-content: center;
     align-items: center;
 }
+
+
+
+input[type='checkbox'] {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    transform: translate(2rem, 0.65rem);
+    opacity: 0;
+    cursor: pointer;
+}
+
+input:checked ~ .cart-opened {
+    visibility: visible;
+}

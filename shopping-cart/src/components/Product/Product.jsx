@@ -2,16 +2,9 @@ import './Product.css'
 
 function Product(props) {
 
-    const { title, author, info, productsInCart, setProductsInCart } = props
+    const { title, author, info, addProductToCart } = props
 
-    function addProductToCart(event) {
-        const target = event.target.parentNode.id
-
-        if (productsInCart.indexOf(target) === -1) {
-            setProductsInCart([...productsInCart, target])
-        }
-        console.log(productsInCart);
-    }
+    
 
     return (
         <article id={ title } className='product'>
