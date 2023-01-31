@@ -1,8 +1,7 @@
 import "./ViewCart.css"
 
 function ViewCart({ removeProductFromCart, productsInCart }) {
-    if (productsInCart.length > 0) {
-    }
+    
     const liElements = productsInCart.map((item, i) => <li key={ i }><span>{ item }</span><a onClick={ (event) => removeProductFromCart(event) } href="#">-</a></li>)
        
     return(

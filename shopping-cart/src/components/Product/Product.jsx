@@ -1,13 +1,10 @@
 import './Product.css'
 
-function Product(props) {
+function Product({ title, author, info, addProductToCart, i } ) {
 
-    const { title, author, info, addProductToCart } = props
-
-    
 
     return (
-        <article id={ title } className='product'>
+        <article id={ title } key={ i } className='product'>
             <h3>{ title }</h3>
             <h4>av { author }</h4>
             <p>{ info }</p>

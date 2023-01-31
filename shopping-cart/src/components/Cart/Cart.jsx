@@ -1,14 +1,8 @@
-
 import ViewCart from '../ViewCart/ViewCart'
 
 import './Cart.css'
 
-
-
 function Cart({ removeProductFromCart, productsInCart }) {
-
-    
-
 
     return (
         <article className='header__cart'>
